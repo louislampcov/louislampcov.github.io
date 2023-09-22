@@ -26,14 +26,15 @@ $(function () {
      * The grid will place both horizontal and vertical platforms incremented 100 pixels apart
      * This can give you a better idea of where to create new platforms
      * Comment the lines out to remove the grid
-     */
-
+     
+*/
     for (let i = 100; i < canvas.width; i += 100) {
       createPlatform(i, canvas.height, -1, -canvas.height);
     }
     for (let i = 100; i < canvas.height; i += 100) {
       createPlatform(canvas.width, i, -canvas.width, -1);
     }
+    
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -44,9 +45,13 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    createPlatform(200,520,100,10)
-    createPlatform(300,650,100,10)
-
+  
+    createPlatform(650,480,100,50)
+    createPlatform(500,610,100,10)
+    createPlatform(700,400,10,10)
+    createPlatform(600,280,5,5)
+    createPlatform(450,280,5,5)
+    
     
     // TODO 2
     // Create collectables
@@ -54,8 +59,8 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("grace",200,100,0.2,0.5)
-
+    
+    createCollectable("database",350,120,0,0.2)
 
     // TODO 3
     // Create cannons
@@ -63,7 +68,7 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
     
-    createCannon ("left",200,2000,1000,10)
+
 
 
 
