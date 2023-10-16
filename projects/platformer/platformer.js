@@ -51,6 +51,7 @@ $(function () {
     createPlatform(700,400,10,10)
     createPlatform(600,280,5,5)
     createPlatform(450,280,5,5)
+    createPlatform(750,350,50,25)
     
     
     // TODO 2
@@ -60,8 +61,8 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
     
-    createCollectable("database",350,120,0,0.2)
-
+    createCollectable("database",350,120,0,1.5)
+ 
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
@@ -69,7 +70,9 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
     
 
-
+    createCannon("top",300,1000,10,10)
+    createCannon("left",100,1000,10,10)
+    createCannon("right",500,1000,10,10)
 
 
     /////////////////////////////////////////////////
